@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+body {
+  font-family: "Bebas Neue", cursive;
+  color: #fcf25a;
+  background-color: black;
+  background-image: url("../imagens/back-groovin.jpg");
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 40%;
+}
+
+hero {
+  margin: 10em;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 50%;
+}
+
+.subhead {
+  margin: 10px;
+  font-size: 3vw;
+}
+
+.container {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 10em;
+}
+
+.section-text {
+  font-size: 3em;
+  margin: 10px;
+}
+
+.setlist {
+  margin: 20px;
+}
+
+.instagram {
+  margin: 20px;
+  align-items: center;
+}
+
+.instafeed {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instafeed a img {
+  width: 100%;
+  color: #fcf25a;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 270px;
+  height: 270px;
+}
+
+.show-list {
+  list-style-type: none;
+  text-align: center;
+  font-size: 2em;
+  line-height: 2em;
+  padding: 0px;
+  margin: 0px;
+}
+
+.contatos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-left: 0;
+}
+.contatos li {
+  margin: 20px;
+}
+.contatos li a img {
+  width: 50px;
+}
+.contatos li a:hover {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container {
+    display: grid;
+    place-content: center;
+  }
+
+  .logo {
+    width: 80%;
+  }
+
+  .instafeed {
+    flex-direction: row;
+    margin-bottom: -8em;
+  }
+  .instafeed a img {
+    color: #fcf25a;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 150px;
+    height: 150px;
+  }
+
+  .section-text {
+    font-size: 2em;
+    margin: 10px;
+  }
+
+  .show-list {
+    list-style-type: none;
+    text-align: center;
+    font-size: 1em;
+    line-height: 2em;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  nav {
+    margin-top: -5em;
+  }
+}/*# sourceMappingURL=main.css.map */

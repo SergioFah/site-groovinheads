@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groovin Heads</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <hero>
+        <img class="logo" src="imagens/logo-groovin.svg" alt="logo da banda Groovin Heads">
+        <h3 class="subhead">Groovin'going.. time flies...</h1>
+    </hero>
+    
+    <section class="container">
+        <div class="setlist">
+            <h1 class="section-text">SETLIST</h1>
+            <iframe class="spotify-iframe" style="border: radius 0" src="https://open.spotify.com/embed/playlist/5e3kn3pXhCEHpmrcdvYdrf?utm_source=generator" width="414" height="825" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+        </div>
+        <div class="instagram">
+        <h1 class="section-text">INSTAGRAM</h1>
+        <div class="instafeed" id="instafeed-container"></div>
+            <script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+            <script type="text/javascript">
+                var userFeed = new Instafeed({
+                    get: 'user',
+                    target: "instafeed-container",
+                    resolution: 'low_resolution',
+                    accessToken: '-------------'
+                });
+                userFeed.run();
+            </script>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="shows-list">
+            <h1 class="section-text">UPCOMING SHOWS</h1>
+            <ul class="show-list">
+                <li>PLACE - DAY/MONTH</li>
+                <li>PLACE - DAY/MONTH</li>
+                <li>PLACE - DAY/MONTH</li>
+            </ul>
+        </div>
+    </section>
+
+    <nav>
+        <ul class="contatos">
+            <li><a href="https://www.instagram.com/groovinheads/"><img src="imagens/instagram-icon.svg" alt=""></a></li>
+            <li><a href="https://api.whatsapp.com/"><img src="imagens/wpp-icon.svg" alt=""></a></li>
+            <li><a href="themobcontato@gmail.com"><img src="imagens/email-icon.svg" alt=""></a></li>
+        </ul>
+    </nav>
+    </body>
+</html>
